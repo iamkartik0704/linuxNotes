@@ -48,3 +48,17 @@ ls command is used to print the content of a directory
 
 cd command is used to change the directory 
 cd .. takes you to one level above in the heirarchy
+
+absolute and relative path
+absolute- starts from the root of the fileSystem (in linux root is denoted by '/') - prefer this when you are unaware of the directory you wish to work in
+
+relative - here the path is relative to the directory you are working in rn and it doesn't start with '/'
+
+cat command - used to view the content inside a/multiple files
+
+head command - used to print the first n lines of the code
+syntax - head -n 10 files.txt   (bydefault 10)
+
+similar to the head command, we have the tail command;
+tail command - used to print the last n lines of the code
+syntax - tail -n 10 files.txt
