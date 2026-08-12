@@ -62,3 +62,44 @@ syntax - head -n 10 files.txt   (bydefault 10)
 similar to the head command, we have the tail command;
 tail command - used to print the last n lines of the code
 syntax - tail -n 10 files.txt
+
+
+less and more command in linux - pagers;
+these help you read the output one screen at a time 
+
+a. more command:-
+shows text on screen and waits for you to ask for more
+difficulties:- very tough to scroll back , reads the file beforeHand opening it thus this process becomes slower
+Basic syntax: more super_long_file.txt
+
+b. less co
+mmand:-
+less  = less + more (that is it can do everything more does but also the additional things)
+Basic syntax:- less super_long_file.txt
+
+shortcut keys for less:-
+spacebar - page down
+b - page up or back
+/ - search
+q - quit
+
+
+touch command - made for updating the access and the timeStamp of the file but generally used to create a/more new file(s)
+
+Basic syntax - touch fileName.extension
+
+mkdir command - used to create a new directory
+
+move command - either used to move a file/directory from one place to another or simply rename the file
+
+1. to rename a file
+mv intitalName.extension finalName.extension
+
+2. Moving a file from the current directory to another nested directory:
+mv report.csv archives/report.csv
+
+3. Moving a file from the current directory, to the parent directory:
+mv invoice.pdf ../invoice.pdf
+
+4. If you don't want to rename the file and you're just moving it to a different directory, you can omit the filename:
+mv photo.png images/
