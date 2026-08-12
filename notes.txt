@@ -1,0 +1,50 @@
+echo is used for printing a stmt
+example: echo "Hi I am Pi"
+
+a terminal is a program that accepts text based commands and can render text on screen
+
+shell is the program that runs the terminal commands ie main job is to interpret the commands you type and execute them.
+
+shells are basically referred to as REPL- read evaluate print loop
+
+expr command is used to evaluate and print the expression
+example:- expr 420-69
+output:- 420-69 (without spaces it is considered a single expr)
+
+example:- expr 420 - 69
+output:- 351
+
+whoami :- prints the username of  the user you are currently logged in as.
+
+// variables
+name="kartik"   // remember to place no spaces in between
+$ echo $name
+the first dollar sign which is a space away tells that this is a shell command and is to be used inside a shell without the first dollar sign
+the second dollar sign tells the CLI that it is a variable and print the value of the variable 
+$ echo $name :- using this in the terminal prints the value of the variable
+whereas
+$ echo name  :- simple word name is printed here
+// u may think that without "" how re we being able to print the name but yes we can 
+"" saves the format and originality of the text you have entered like the spaces between the texts
+
+
+
+history command is used to show the commands u have written in the REPL
+
+clear is used to empty the terminal by clearing of the screen and not the history
+
+directories refer to the folders    
+root directory is the topmost folder in the heirarchy
+
+pwd is used to print the current directories' name
+(say it returns /home/users - the first '/' represents the root directory and home is the directory inside root and users is inside home ) so the heirarchy follows:-
+folder structure tree
+
+root
+    |->home
+          |-> users
+
+ls command is used to print the content of a directory
+
+cd command is used to change the directory 
+cd .. takes you to one level above in the heirarchy
