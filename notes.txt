@@ -162,3 +162,60 @@ basic syntax: mydir/program.sh
 
 if it is in your current directory:
 basic syntax: ./program.sh
+
+to run the interpreted files we must tell the interpreter's location and that is done byt sheBang command
+
+shebang command: special line at the top of a script that tells your shell which program to use to execute the file.
+basic syntax: #!/usr/bin/python3
+
+if you have this at the top of the file to be interpreted, you can simply run the file using the name in the terminal
+
+
+environment variables: these are available to all the programs that you run in your shell
+
+normal variable declaration and export variable declaration:
+1. normal declaration:
+limited to the current active shell session
+any child program wont be able to access it
+
+2.export type declaration:
+though it is also known to the active shell session but the child processes do have the access to it and you can use the "unset" command to erase this variable
+
+basic syntax: export Name="Kartik"
+to unset this, 
+unset Name
+
+Path variable is a variable which is known to severa programs(a sort of  built in environment variable)
+it helps us by allowing us not to enter the complete address of the executable command and only enter the name of the command
+It is a list of directories that our shell will look and search in for running the specific command
+
+echo $PATH - prints all the directories your shell will look for running an executable command
+
+to change the path : - 
+export PATH="$PATH:/some/new/directory"
+$PATH representsthe old path and the new one is to the right of the ':' 
+
+
+help command:-
+basically opens the manual for the command selected along
+basic  syntax: commandName --help
+example: grep --help
+
+
+flags:- these are like the helping verbs used with the command to increase the functionality
+
+use of single dash for a single character flag '-a'
+use of double dash for multiple characters flag '--help'
+
+wordCounter command:
+wc is used to count the number of words/lines and bytes using different flags
+basic syntax: wc -c fileName.extension
+
+printing the exit codes;
+basic syntax: echo $?
+
+
+
+
+
+
