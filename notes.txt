@@ -103,3 +103,62 @@ mv invoice.pdf ../invoice.pdf
 
 4. If you don't want to rename the file and you're just moving it to a different directory, you can omit the filename:
 mv photo.png images/
+
+remove command:- 
+used to delete a file or empty directory
+basic syntax:- rm filename.extension
+
+//forced recursive deletion
+basic syntax : rm -r some_directory
+this recursively deletes the content of a directory
+
+copy command:
+copies a file from one location to another
+basic syntax: cp source_file.txt destination/
+
+-R does the copy thing of the directory recursively
+basic syntax: cp -R my_dir new_dir
+
+
+echo $HOME
+$HOME env variable has the abs path to the home some_directory
+
+cd ~
+takes you to direct home directory
+
+
+grep command:
+The most basic use for grep is to search for a string(case sensitive) in a file
+basic syntax:- grep "string" filePath
+
+you can also use it to find the content in multiple files
+basic syntax - grep "string" filePath1 filePath2
+
+grep -r "hello" .
+this is used to recursively find the word "hello" in the current directory and its subdirectories
+
+grep used to search for the file content and not the file name
+find command: allows you to look for a specific file in a particular directory
+basic syntax: find some_directory -name hello.txt
+
+it also allows pattern searches, say i want to look for all the txt files then:
+find some_directory -name "*.txt"
+
+find some_directory -name "*kartik*"
+this helps to find all the files with the name "kartik" in it
+
+to look for something in the current directory 
+find . -name "*kartik*"
+
+which command: used to locate the actual executable file associated with a command you type into your terminal(used to tell the path of the interpreter) , it looks for the $PATH environment variable
+
+.sh file is interpreted file
+
+
+to run an executable file:-
+if the file is not in the current directory:
+simply write the file name(ensuring you give the filePath)
+basic syntax: mydir/program.sh
+
+if it is in your current directory:
+basic syntax: ./program.sh
