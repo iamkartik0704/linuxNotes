@@ -279,3 +279,37 @@ the second arg is the name you want to assign to the shortcut
 top command is similar to the task manager that tells about the usage of different programs
 
 kill command that forces the program to close down
+
+#Permissions
+In Linux, every single file and directory is assigned two things regarding ownership:
+An Owner (a specific individual user).
+A Group (a designated collection of users).
+the Permissions are usually defined by 10 char string
+
+the first char: "D" for directory or "-" for a file
+then there exist 3 sets of Permissions for :
+1. owner
+2. Group
+3. others
+
+each set looks like r w x where r stands for read Permission , w for write Permission and x for execute Permission
+
+
+chmod
+used to change the Permission of a file or directory
+use -r flag to assign the Permission recursively
+
+basic syntax: chmod -R u=rwx,g=,o= DIRECTORY
+u stands for the owner , g for the group and o for others
+since here g nd o are assigned nothing, they got no Permissions
+DIRECTORY/FILE
+for a file do not use -R
+
+chmod +x is used to grant the executable Permission to the script to help it get download
+
+chown command:
+The chown command, which stands for "change owner," allows you to change the owner of a file or directory, and it requires root privileges
+basic syntax: sudo chown -R root contacts
+-R again for directory
+the access is to be given to the root of the directory "contacts"
+
