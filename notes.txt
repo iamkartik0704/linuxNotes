@@ -214,8 +214,23 @@ basic syntax: wc -c fileName.extension
 printing the exit codes;
 basic syntax: echo $?
 
+stdout:
+basic printing the output on the terminal using "echo" command
 
+stderr:
+it basically prints the errors in the terminal, thus the biggest issue is that you cant differentiate between output from stdout and stderr, thus you can redirect the output from the stderr to another file
+Redirecting only errors: If you want to hide errors from your screen and save them to an error log, you use 2>.
+say i was to read data from two files out of which the latter is restricted;
+cat public_notes.txt secret_passwords.txt 2> error_log.txt (Normal results print to screen, errors go to the file).
+this would give the output for the content of file 1 and i would have to go to the error_log.txt file to look for the errors
 
+stdin:-
+using the '<' operator: you can redirect the file's content to command you are working with
+for example:- wc < input.txt
 
+analyze the difference between wc input.txt and wc<input.txt
+1.wc input.txt
+here the wc command has the file input.txt as an arg so wc will have to open the file in the drive and take the content from it and perform the task
 
-
+2. wc<input.txt
+here the shell opens the file and passes the content in the wc program
