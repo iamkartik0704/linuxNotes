@@ -228,9 +228,22 @@ stdin:-
 using the '<' operator: you can redirect the file's content to command you are working with
 for example:- wc < input.txt
 
+moreover the file can have "read" command which allows the user to enter the inout from the keyboard
+for example:
+echo "Please enter your name:"
+read user_name
+// it would take input from the keyboard
+
 analyze the difference between wc input.txt and wc<input.txt
 1.wc input.txt
 here the wc command has the file input.txt as an arg so wc will have to open the file in the drive and take the content from it and perform the task
 
 2. wc<input.txt
 here the shell opens the file and passes the content in the wc program
+
+"pipe" operator
+The pipe operator takes the stdout of the program on the left and "pipes" it into the stdin of the program on the right.
+for example:
+echo "Have you heard the tragedy of Darth Plagueis the Wise?" | wc -w
+# 10
+here the stdout is received by wc and it operates on that to show the output provided that the command we are using, here "wc" should be able to read from the stdin
