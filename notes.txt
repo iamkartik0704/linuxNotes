@@ -247,3 +247,35 @@ for example:
 echo "Have you heard the tragedy of Darth Plagueis the Wise?" | wc -w
 # 10
 here the stdout is received by wc and it operates on that to show the output provided that the command we are using, here "wc" should be able to read from the stdin
+
+configuration files -  that run automatically each time you start a new shell session
+
+
+alias and unalias
+creating a shortcut for a command you use often for the current terminal context
+basic syntax: alias ll="ls -la"
+
+unalias refers  to deleting that shortcut
+basic syntax: unalias ll
+
+
+man:
+ displays the manual for the commands
+ basic syntax: man commandName
+ after pressing the enter if you do the following you would be able to search among the text
+
+/-whatToFind          for example:     /-r   finds for the appearances of r  
+n goes to the next appearance
+N goes to the previous appearance
+
+Symlink
+A symlink is not the same as a copy: it doesn't duplicate the file's contents. It just creates another path that points to the original
+formed using the link (ln) command with the -s flag
+basic syntax:    ln -s target_path link_path
+
+target is the actual physical file you need to point to 
+the second arg is the name you want to assign to the shortcut
+
+top command is similar to the task manager that tells about the usage of different programs
+
+kill command that forces the program to close down
