@@ -1,5 +1,5 @@
 echo is used for printing a stmt
-example: echo "Hi I am Pi".
+example: echo "Hi I am Pi"..
 
 a terminal is a program that accepts text based commands and can render text on screen
 
